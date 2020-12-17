@@ -259,6 +259,8 @@ namespace Lab_6
                 FiguresBox.Items.Clear();
                 for (int i = 0; i < shapeAccumulator.figures.Count; i++)
                     FiguresBox.Items.Add(shapeAccumulator.figures[i]);
+                Graphics graphics = pictureBox1.CreateGraphics();
+                graphics.Clear(BackColor);
             }
         }
 
@@ -277,6 +279,8 @@ namespace Lab_6
                 FiguresBox.Items.Clear();
                 for (int i = 0; i < shapeAccumulator.figures.Count; i++)
                     FiguresBox.Items.Add(shapeAccumulator.figures[i]);
+                Graphics graphics = pictureBox1.CreateGraphics();
+                graphics.Clear(BackColor);
             }
         }
     }
