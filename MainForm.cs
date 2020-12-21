@@ -18,7 +18,7 @@ namespace Lab_6
         public Form1()
         {
             InitializeComponent();
-            shapeAccumulator.Load();
+            Load(shapeAccumulator);
             for (int i = 0; i < shapeAccumulator.figures.Count; i++)
                 FiguresBox.Items.Add(shapeAccumulator.figures[i]);
             form2 = new Form2(this);
@@ -57,107 +57,107 @@ namespace Lab_6
             switch (form2.usersButton)
             {
                 case 1:
-                    label1.Visible = true;
-                    textBox1.Visible = true;
-                    label2.Visible = true;
-                    textBox2.Visible = true;
-                    label3.Text = "R";
-                    label3.Visible = true;
-                    textBox3.Visible = true;
-                    label4.Visible = false;
-                    textBox4.Visible = false;
-                    label5.Visible = false;
-                    textBox5.Visible = false;
-                    label6.Visible = false;
-                    textBox6.Visible = false;
-                    label7.Visible = false;
-                    textBox7.Visible = false;
-                    label8.Visible = false;
-                    textBox8.Visible = false;
-                    button1.Visible = true;
+                    labelX1.Visible = true;
+                    textBoxX1.Visible = true;
+                    labelY1.Visible = true;
+                    textBoxY1.Visible = true;
+                    labelX2.Text = "R";
+                    labelX2.Visible = true;
+                    textBoxX2.Visible = true;
+                    labelY2.Visible = false;
+                    textBoxY2.Visible = false;
+                    labelX3.Visible = false;
+                    textBoxX3.Visible = false;
+                    labelY3.Visible = false;
+                    textBoxY3.Visible = false;
+                    labelX4.Visible = false;
+                    textBoxX4.Visible = false;
+                    labelY4.Visible = false;
+                    textBoxY4.Visible = false;
+                    buttonSubmit.Visible = true;
                     break;
 
                 case 2:
-                    label1.Visible = true;
-                    textBox1.Visible = true;
-                    label2.Visible = true;
-                    textBox2.Visible = true;
-                    label3.Text = "X2";
-                    label3.Visible = true;
-                    textBox3.Visible = true;
-                    label4.Visible = true;
-                    textBox4.Visible = true;
-                    label5.Visible = true;
-                    textBox5.Visible = true;
-                    label6.Visible = true;
-                    textBox6.Visible = true;
-                    label7.Visible = true;
-                    textBox7.Visible = true;
-                    label8.Visible = true;
-                    textBox8.Visible = true;
-                    button1.Visible = true;
+                    labelX1.Visible = true;
+                    textBoxX1.Visible = true;
+                    labelY1.Visible = true;
+                    textBoxY1.Visible = true;
+                    labelX2.Text = "X2";
+                    labelX2.Visible = true;
+                    textBoxX2.Visible = true;
+                    labelY2.Visible = true;
+                    textBoxY2.Visible = true;
+                    labelX3.Visible = true;
+                    textBoxX3.Visible = true;
+                    labelY3.Visible = true;
+                    textBoxY3.Visible = true;
+                    labelX4.Visible = true;
+                    textBoxX4.Visible = true;
+                    labelY4.Visible = true;
+                    textBoxY4.Visible = true;
+                    buttonSubmit.Visible = true;
                     break;
 
                 case 3:
-                    label1.Visible = true;
-                    textBox1.Visible = true;
-                    label2.Visible = true;
-                    textBox2.Visible = true;
-                    label3.Text = "X2";
-                    label3.Visible = true;
-                    textBox3.Visible = true;
-                    label4.Visible = true;
-                    textBox4.Visible = true;
-                    label5.Visible = true;
-                    textBox5.Visible = true;
-                    label6.Visible = true;
-                    textBox6.Visible = true;
-                    label7.Visible = true;
-                    textBox7.Visible = true;
-                    label8.Visible = true;
-                    textBox8.Visible = true;
-                    button1.Visible = true;
+                    labelX1.Visible = true;
+                    textBoxX1.Visible = true;
+                    labelY1.Visible = true;
+                    textBoxY1.Visible = true;
+                    labelX2.Text = "X2";
+                    labelX2.Visible = true;
+                    textBoxX2.Visible = true;
+                    labelY2.Visible = true;
+                    textBoxY2.Visible = true;
+                    labelX3.Visible = true;
+                    textBoxX3.Visible = true;
+                    labelY3.Visible = true;
+                    textBoxY3.Visible = true;
+                    labelX4.Visible = true;
+                    textBoxX4.Visible = true;
+                    labelY4.Visible = true;
+                    textBoxY4.Visible = true;
+                    buttonSubmit.Visible = true;
                     break;
 
                 case 4:
-                    label1.Visible = true;
-                    textBox1.Visible = true;
-                    label2.Visible = true;
-                    textBox2.Visible = true;
-                    label3.Text = "X2";
-                    label3.Visible = true;
-                    textBox3.Visible = true;
-                    label4.Visible = true;
-                    textBox4.Visible = true;
-                    label5.Visible = true;
-                    textBox5.Visible = true;
-                    label6.Visible = true;
-                    textBox6.Visible = true;
-                    label7.Visible = false;
-                    textBox7.Visible = false;
-                    label8.Visible = false;
-                    textBox8.Visible = false;
-                    button1.Visible = true;
+                    labelX1.Visible = true;
+                    textBoxX1.Visible = true;
+                    labelY1.Visible = true;
+                    textBoxY1.Visible = true;
+                    labelX2.Text = "X2";
+                    labelX2.Visible = true;
+                    textBoxX2.Visible = true;
+                    labelY2.Visible = true;
+                    textBoxY2.Visible = true;
+                    labelX3.Visible = true;
+                    textBoxX3.Visible = true;
+                    labelY3.Visible = true;
+                    textBoxY3.Visible = true;
+                    labelX4.Visible = false;
+                    textBoxX4.Visible = false;
+                    labelY4.Visible = false;
+                    textBoxY4.Visible = false;
+                    buttonSubmit.Visible = true;
                     break;
 
                 case 5:
-                    label1.Visible = false;
-                    textBox1.Visible = false;
-                    label2.Visible = false;
-                    textBox2.Visible = false;
-                    label3.Visible = false;
-                    textBox3.Visible = false;
-                    label4.Visible = false;
-                    textBox4.Visible = false;
-                    label5.Visible = false;
-                    textBox5.Visible = false;
-                    label6.Visible = false;
-                    textBox6.Visible = false;
-                    label7.Visible = false;
-                    textBox7.Visible = false;
-                    label8.Visible = false;
-                    textBox8.Visible = false;
-                    button1.Visible = false;
+                    labelX1.Visible = false;
+                    textBoxX1.Visible = false;
+                    labelY1.Visible = false;
+                    textBoxY1.Visible = false;
+                    labelX2.Visible = false;
+                    textBoxX2.Visible = false;
+                    labelY2.Visible = false;
+                    textBoxY2.Visible = false;
+                    labelX3.Visible = false;
+                    textBoxX3.Visible = false;
+                    labelY3.Visible = false;
+                    textBoxY3.Visible = false;
+                    labelX4.Visible = false;
+                    textBoxX4.Visible = false;
+                    labelY4.Visible = false;
+                    textBoxY4.Visible = false;
+                    buttonSubmit.Visible = false;
                     break;
 
                 default:
@@ -174,9 +174,9 @@ namespace Lab_6
                 {
                     case 1:
                         points = new Point[2];
-                        points[0].X = Convert.ToInt32(textBox1.Text);
-                        points[0].Y = Convert.ToInt32(textBox2.Text);
-                        points[1].X = Convert.ToInt32(textBox3.Text) + points[0].X;
+                        points[0].X = Convert.ToInt32(textBoxX1.Text);
+                        points[0].Y = Convert.ToInt32(textBoxY1.Text);
+                        points[1].X = Convert.ToInt32(textBoxX2.Text) + points[0].X;
                         points[1].Y = points[0].Y;
                         Circle circle = new Circle(points);
                         shapeAccumulator.Add(circle);
@@ -184,40 +184,40 @@ namespace Lab_6
 
                     case 2:
                         points = new Point[4];
-                        points[0].X = Convert.ToInt32(textBox1.Text);
-                        points[0].Y = Convert.ToInt32(textBox2.Text);
-                        points[1].X = Convert.ToInt32(textBox3.Text);
-                        points[1].Y = Convert.ToInt32(textBox4.Text);
-                        points[2].X = Convert.ToInt32(textBox5.Text);
-                        points[2].Y = Convert.ToInt32(textBox6.Text);
-                        points[3].X = Convert.ToInt32(textBox7.Text);
-                        points[3].Y = Convert.ToInt32(textBox8.Text);
+                        points[0].X = Convert.ToInt32(textBoxX1.Text);
+                        points[0].Y = Convert.ToInt32(textBoxY1.Text);
+                        points[1].X = Convert.ToInt32(textBoxX2.Text);
+                        points[1].Y = Convert.ToInt32(textBoxY2.Text);
+                        points[2].X = Convert.ToInt32(textBoxX3.Text);
+                        points[2].Y = Convert.ToInt32(textBoxY3.Text);
+                        points[3].X = Convert.ToInt32(textBoxX4.Text);
+                        points[3].Y = Convert.ToInt32(textBoxY4.Text);
                         Square square = new Square(points);
                         shapeAccumulator.Add(square);
                         break;
 
                     case 3:
                         points = new Point[4];
-                        points[0].X = Convert.ToInt32(textBox1.Text);
-                        points[0].Y = Convert.ToInt32(textBox2.Text);
-                        points[1].X = Convert.ToInt32(textBox3.Text);
-                        points[1].Y = Convert.ToInt32(textBox4.Text);
-                        points[2].X = Convert.ToInt32(textBox5.Text);
-                        points[2].Y = Convert.ToInt32(textBox6.Text);
-                        points[3].X = Convert.ToInt32(textBox7.Text);
-                        points[3].Y = Convert.ToInt32(textBox8.Text);
+                        points[0].X = Convert.ToInt32(textBoxX1.Text);
+                        points[0].Y = Convert.ToInt32(textBoxY1.Text);
+                        points[1].X = Convert.ToInt32(textBoxX2.Text);
+                        points[1].Y = Convert.ToInt32(textBoxY2.Text);
+                        points[2].X = Convert.ToInt32(textBoxX3.Text);
+                        points[2].Y = Convert.ToInt32(textBoxY3.Text);
+                        points[3].X = Convert.ToInt32(textBoxX4.Text);
+                        points[3].Y = Convert.ToInt32(textBoxY4.Text);
                         Rectangle rectangle = new Rectangle(points);
                         shapeAccumulator.Add(rectangle);
                         break;
 
                     case 4:
                         points = new Point[3];
-                        points[0].X = Convert.ToInt32(textBox1.Text);
-                        points[0].Y = Convert.ToInt32(textBox2.Text);
-                        points[1].X = Convert.ToInt32(textBox3.Text);
-                        points[1].Y = Convert.ToInt32(textBox4.Text);
-                        points[2].X = Convert.ToInt32(textBox5.Text);
-                        points[2].Y = Convert.ToInt32(textBox6.Text);
+                        points[0].X = Convert.ToInt32(textBoxX1.Text);
+                        points[0].Y = Convert.ToInt32(textBoxY1.Text);
+                        points[1].X = Convert.ToInt32(textBoxX2.Text);
+                        points[1].Y = Convert.ToInt32(textBoxY2.Text);
+                        points[2].X = Convert.ToInt32(textBoxX3.Text);
+                        points[2].Y = Convert.ToInt32(textBoxY3.Text);
                         Triangle triangle = new Triangle(points);
                         shapeAccumulator.Add(triangle);
                         break;
@@ -226,14 +226,14 @@ namespace Lab_6
                         return;
                 }
                 FiguresBox.Items.Add(shapeAccumulator.figures[shapeAccumulator.figures.Count - 1]);
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
-                textBox5.Text = "";
-                textBox6.Text = "";
-                textBox7.Text = "";
-                textBox8.Text = "";
+                textBoxX1.Text = "";
+                textBoxY1.Text = "";
+                textBoxX2.Text = "";
+                textBoxY2.Text = "";
+                textBoxX3.Text = "";
+                textBoxY3.Text = "";
+                textBoxX4.Text = "";
+                textBoxY4.Text = "";
             }
             catch (Exception ex)
             {
@@ -266,8 +266,8 @@ namespace Lab_6
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            shapeAccumulator.Delete_Save();
-            shapeAccumulator.Save();
+            Delete_Save(shapeAccumulator);
+            Save(shapeAccumulator);
         }
 
         private void button2_Click(object sender, EventArgs e)
