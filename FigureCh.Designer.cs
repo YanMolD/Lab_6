@@ -43,7 +43,7 @@
             this.buttonCircle.TabIndex = 0;
             this.buttonCircle.Text = "Круг";
             this.buttonCircle.UseVisualStyleBackColor = true;
-            this.buttonCircle.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCircle.Click += new System.EventHandler(this.buttonCircle_Click);
             // 
             // buttonSquare
             // 
@@ -53,7 +53,7 @@
             this.buttonSquare.TabIndex = 1;
             this.buttonSquare.Text = "Квадрат";
             this.buttonSquare.UseVisualStyleBackColor = true;
-            this.buttonSquare.Click += new System.EventHandler(this.button2_Click);
+            this.buttonSquare.Click += new System.EventHandler(this.buttonSquare_Click);
             // 
             // buttonRectangle
             // 
@@ -63,7 +63,7 @@
             this.buttonRectangle.TabIndex = 2;
             this.buttonRectangle.Text = "Прямоугольник";
             this.buttonRectangle.UseVisualStyleBackColor = true;
-            this.buttonRectangle.Click += new System.EventHandler(this.button3_Click);
+            this.buttonRectangle.Click += new System.EventHandler(this.buttonRectangle_Click);
             // 
             // buttonTriangle
             // 
@@ -73,7 +73,7 @@
             this.buttonTriangle.TabIndex = 3;
             this.buttonTriangle.Text = "Треугольник";
             this.buttonTriangle.UseVisualStyleBackColor = true;
-            this.buttonTriangle.Click += new System.EventHandler(this.button4_Click);
+            this.buttonTriangle.Click += new System.EventHandler(this.buttonTriangle_Click);
             // 
             // button5
             // 
@@ -83,7 +83,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Отмена";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // Form2
             // 

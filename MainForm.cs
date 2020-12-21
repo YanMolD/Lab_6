@@ -12,8 +12,8 @@ namespace Lab_6
 {
     public partial class Form1 : Form
     {
-        private ShapeAccumulator shapeAccumulator = new ShapeAccumulator();
-        private Form2 form2;
+        private readonly ShapeAccumulator shapeAccumulator = new ShapeAccumulator();
+        private readonly Form2 form2;
 
         public Form1()
         {
@@ -50,119 +50,6 @@ namespace Lab_6
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
             form2.Visible = true;
-        }
-
-        public void ShowBoxes()
-        {
-            switch (form2.usersButton)
-            {
-                case 1:
-                    labelX1.Visible = true;
-                    textBoxX1.Visible = true;
-                    labelY1.Visible = true;
-                    textBoxY1.Visible = true;
-                    labelX2.Text = "R";
-                    labelX2.Visible = true;
-                    textBoxX2.Visible = true;
-                    labelY2.Visible = false;
-                    textBoxY2.Visible = false;
-                    labelX3.Visible = false;
-                    textBoxX3.Visible = false;
-                    labelY3.Visible = false;
-                    textBoxY3.Visible = false;
-                    labelX4.Visible = false;
-                    textBoxX4.Visible = false;
-                    labelY4.Visible = false;
-                    textBoxY4.Visible = false;
-                    buttonSubmit.Visible = true;
-                    break;
-
-                case 2:
-                    labelX1.Visible = true;
-                    textBoxX1.Visible = true;
-                    labelY1.Visible = true;
-                    textBoxY1.Visible = true;
-                    labelX2.Text = "X2";
-                    labelX2.Visible = true;
-                    textBoxX2.Visible = true;
-                    labelY2.Visible = true;
-                    textBoxY2.Visible = true;
-                    labelX3.Visible = true;
-                    textBoxX3.Visible = true;
-                    labelY3.Visible = true;
-                    textBoxY3.Visible = true;
-                    labelX4.Visible = true;
-                    textBoxX4.Visible = true;
-                    labelY4.Visible = true;
-                    textBoxY4.Visible = true;
-                    buttonSubmit.Visible = true;
-                    break;
-
-                case 3:
-                    labelX1.Visible = true;
-                    textBoxX1.Visible = true;
-                    labelY1.Visible = true;
-                    textBoxY1.Visible = true;
-                    labelX2.Text = "X2";
-                    labelX2.Visible = true;
-                    textBoxX2.Visible = true;
-                    labelY2.Visible = true;
-                    textBoxY2.Visible = true;
-                    labelX3.Visible = true;
-                    textBoxX3.Visible = true;
-                    labelY3.Visible = true;
-                    textBoxY3.Visible = true;
-                    labelX4.Visible = true;
-                    textBoxX4.Visible = true;
-                    labelY4.Visible = true;
-                    textBoxY4.Visible = true;
-                    buttonSubmit.Visible = true;
-                    break;
-
-                case 4:
-                    labelX1.Visible = true;
-                    textBoxX1.Visible = true;
-                    labelY1.Visible = true;
-                    textBoxY1.Visible = true;
-                    labelX2.Text = "X2";
-                    labelX2.Visible = true;
-                    textBoxX2.Visible = true;
-                    labelY2.Visible = true;
-                    textBoxY2.Visible = true;
-                    labelX3.Visible = true;
-                    textBoxX3.Visible = true;
-                    labelY3.Visible = true;
-                    textBoxY3.Visible = true;
-                    labelX4.Visible = false;
-                    textBoxX4.Visible = false;
-                    labelY4.Visible = false;
-                    textBoxY4.Visible = false;
-                    buttonSubmit.Visible = true;
-                    break;
-
-                case 5:
-                    labelX1.Visible = false;
-                    textBoxX1.Visible = false;
-                    labelY1.Visible = false;
-                    textBoxY1.Visible = false;
-                    labelX2.Visible = false;
-                    textBoxX2.Visible = false;
-                    labelY2.Visible = false;
-                    textBoxY2.Visible = false;
-                    labelX3.Visible = false;
-                    textBoxX3.Visible = false;
-                    labelY3.Visible = false;
-                    textBoxY3.Visible = false;
-                    labelX4.Visible = false;
-                    textBoxX4.Visible = false;
-                    labelY4.Visible = false;
-                    textBoxY4.Visible = false;
-                    buttonSubmit.Visible = false;
-                    break;
-
-                default:
-                    break;
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -282,6 +169,115 @@ namespace Lab_6
                 Graphics graphics = pictureBox1.CreateGraphics();
                 graphics.Clear(BackColor);
             }
+        }
+
+        public void ShowCircle()
+        {
+            labelX1.Visible = true;
+            textBoxX1.Visible = true;
+            labelY1.Visible = true;
+            textBoxY1.Visible = true;
+            labelX2.Text = "R";
+            labelX2.Visible = true;
+            textBoxX2.Visible = true;
+            labelY2.Visible = false;
+            textBoxY2.Visible = false;
+            labelX3.Visible = false;
+            textBoxX3.Visible = false;
+            labelY3.Visible = false;
+            textBoxY3.Visible = false;
+            labelX4.Visible = false;
+            textBoxX4.Visible = false;
+            labelY4.Visible = false;
+            textBoxY4.Visible = false;
+            buttonSubmit.Visible = true;
+        }
+
+        public void ShowSquare()
+        {
+            labelX1.Visible = true;
+            textBoxX1.Visible = true;
+            labelY1.Visible = true;
+            textBoxY1.Visible = true;
+            labelX2.Text = "X2";
+            labelX2.Visible = true;
+            textBoxX2.Visible = true;
+            labelY2.Visible = true;
+            textBoxY2.Visible = true;
+            labelX3.Visible = true;
+            textBoxX3.Visible = true;
+            labelY3.Visible = true;
+            textBoxY3.Visible = true;
+            labelX4.Visible = true;
+            textBoxX4.Visible = true;
+            labelY4.Visible = true;
+            textBoxY4.Visible = true;
+            buttonSubmit.Visible = true;
+        }
+
+        public void ShowRectangle()
+        {
+            labelX1.Visible = true;
+            textBoxX1.Visible = true;
+            labelY1.Visible = true;
+            textBoxY1.Visible = true;
+            labelX2.Text = "X2";
+            labelX2.Visible = true;
+            textBoxX2.Visible = true;
+            labelY2.Visible = true;
+            textBoxY2.Visible = true;
+            labelX3.Visible = true;
+            textBoxX3.Visible = true;
+            labelY3.Visible = true;
+            textBoxY3.Visible = true;
+            labelX4.Visible = true;
+            textBoxX4.Visible = true;
+            labelY4.Visible = true;
+            textBoxY4.Visible = true;
+            buttonSubmit.Visible = true;
+        }
+
+        public void ShowTriangle()
+        {
+            labelX1.Visible = true;
+            textBoxX1.Visible = true;
+            labelY1.Visible = true;
+            textBoxY1.Visible = true;
+            labelX2.Text = "X2";
+            labelX2.Visible = true;
+            textBoxX2.Visible = true;
+            labelY2.Visible = true;
+            textBoxY2.Visible = true;
+            labelX3.Visible = true;
+            textBoxX3.Visible = true;
+            labelY3.Visible = true;
+            textBoxY3.Visible = true;
+            labelX4.Visible = false;
+            textBoxX4.Visible = false;
+            labelY4.Visible = false;
+            textBoxY4.Visible = false;
+            buttonSubmit.Visible = true;
+        }
+
+        public void ShowNothing()
+        {
+            labelX1.Visible = false;
+            textBoxX1.Visible = false;
+            labelY1.Visible = false;
+            textBoxY1.Visible = false;
+            labelX2.Visible = false;
+            textBoxX2.Visible = false;
+            labelY2.Visible = false;
+            textBoxY2.Visible = false;
+            labelX3.Visible = false;
+            textBoxX3.Visible = false;
+            labelY3.Visible = false;
+            textBoxY3.Visible = false;
+            labelX4.Visible = false;
+            textBoxX4.Visible = false;
+            labelY4.Visible = false;
+            textBoxY4.Visible = false;
+            buttonSubmit.Visible = false;
         }
     }
 }

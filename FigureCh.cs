@@ -21,38 +21,39 @@ namespace Lab_6
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCircle_Click(object sender, EventArgs e)
         {
             usersButton = 1;
             Visible = false;
-            form.ShowBoxes();
+            form.ShowCircle();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonSquare_Click(object sender, EventArgs e)
         {
             usersButton = 2;
             Visible = false;
-            form.ShowBoxes();
+            form.ShowSquare();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonRectangle_Click(object sender, EventArgs e)
         {
             usersButton = 3;
             Visible = false;
-            form.ShowBoxes();
+            form.ShowRectangle();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonTriangle_Click(object sender, EventArgs e)
         {
             usersButton = 4;
             Visible = false;
-            form.ShowBoxes();
+            form.ShowTriangle();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
             usersButton = 5;
             Visible = false;
+            form.ShowNothing();
         }
     }
 }
